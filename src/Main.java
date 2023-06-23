@@ -53,6 +53,16 @@ public class Main {
         public static void task3 () {
             System.out.println("Задача 3");
          // Пишем код для задачи 3
+            int[] expenses = generateRandomArray();
+            int totalExpenses = 0;
+
+            for (int expense : expenses) {
+                totalExpenses += expense;
+                System.out.print(expense + " ");
+            }
+            double averageExpense = (double) totalExpenses / 30;
+            System.out.println();
+            System.out.printf("Средняя сумма трат за месяц составила %.2f рублей%n", averageExpense);
 
         }
 
