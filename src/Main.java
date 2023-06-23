@@ -33,7 +33,22 @@ public class Main {
         public static void task2 () {
             System.out.println("Задача 2");
          // Пишем код для задачи 2
-
+            int[] expenses = generateRandomArray();
+            int maxExpense = expenses[0];
+            int minExpense = expenses[0];
+            System.out.print(expenses[0] + " ");
+            for (int i = 1; i < expenses.length; i++) {
+                System.out.print(expenses[i] + " ");
+                if (expenses[i] > maxExpense) {
+                    maxExpense = expenses[i];
+                }
+                if (expenses[i] < minExpense) {
+                    minExpense = expenses[i];
+                }
+            }
+            System.out.println();
+            System.out.println("Максимальная сумма расходов за день: " + maxExpense);
+            System.out.println("Минимальная сумма расходов за день: " + minExpense);
         }
         public static void task3 () {
             System.out.println("Задача 3");
