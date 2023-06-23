@@ -20,7 +20,14 @@ public class Main {
         public static void task1 () {
             System.out.println("Задача 1");
          // Пишем код для задачи 1
-
+            int[] arr = generateRandomArray();
+            int totalExpenses = 0;
+            for (int expense : arr) {
+                totalExpenses += expense;
+                System.out.print(expense + " ");
+            }
+            System.out.println();
+            System.out.println("Общая сумма расходов за месяц: " + totalExpenses + " рублей");
         }
 
         public static void task2 () {
